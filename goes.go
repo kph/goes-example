@@ -72,6 +72,7 @@ import (
 	"github.com/platinasystems/goes/cmd/testcmd"
 	"github.com/platinasystems/goes/cmd/thencmd"
 	"github.com/platinasystems/goes/cmd/truecmd"
+	"github.com/platinasystems/goes/cmd/ubiattach"
 	"github.com/platinasystems/goes/cmd/umount"
 	"github.com/platinasystems/goes/cmd/uninstall"
 	"github.com/platinasystems/goes/cmd/uptimed"
@@ -174,6 +175,7 @@ var Goes = &goes.Goes{
 		"[":         testcmd.Command{},
 		"then":      &thencmd.Command{},
 		"true":      truecmd.Command{},
+		"ubiattach": ubiattach.Command{},
 		"umount":    umount.Command{},
 		"uninstall": &uninstall.Command{},
 		"uptimed":   uptimed.Command(make(chan struct{})),
