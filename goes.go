@@ -60,6 +60,7 @@ import (
 	"github.com/platinasystems/goes/cmd/restart"
 	"github.com/platinasystems/goes/cmd/rm"
 	"github.com/platinasystems/goes/cmd/rmmod"
+	"github.com/platinasystems/goes/cmd/scp"
 	"github.com/platinasystems/goes/cmd/slashinit"
 	"github.com/platinasystems/goes/cmd/sleep"
 	"github.com/platinasystems/goes/cmd/source"
@@ -164,9 +165,10 @@ var Goes = &goes.Goes{
 			},
 		},
 		"/init":     &slashinit.Command{},
+		"scp":       scp.Command{},
 		"sleep":     sleep.Command{},
 		"source":    &source.Command{},
-		"sshd":      &sshd.Command{},
+		"sshd":      &sshd.Command{Addr: ":2222", FailSafe: true},
 		"start":     &start.Command{},
 		"stop":      &stop.Command{},
 		"stty":      stty.Command{},
