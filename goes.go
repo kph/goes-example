@@ -9,6 +9,7 @@ import (
 	"github.com/platinasystems/goes/cmd"
 	"github.com/platinasystems/goes/cmd/bang"
 	"github.com/platinasystems/goes/cmd/buildid"
+	"github.com/platinasystems/goes/cmd/buildinfo"
 	"github.com/platinasystems/goes/cmd/cat"
 	"github.com/platinasystems/goes/cmd/cd"
 	"github.com/platinasystems/goes/cmd/chmod"
@@ -76,6 +77,7 @@ import (
 	"github.com/platinasystems/goes/cmd/umount"
 	"github.com/platinasystems/goes/cmd/uninstall"
 	"github.com/platinasystems/goes/cmd/uptimed"
+	"github.com/platinasystems/goes/cmd/version"
 	"github.com/platinasystems/goes/cmd/wget"
 	"github.com/platinasystems/goes/lang"
 )
@@ -154,6 +156,7 @@ var Goes = &goes.Goes{
 			},
 			ByName: map[string]cmd.Cmd{
 				"buildid":   buildid.Command{},
+				"buildinfo": buildinfo.Command{},
 				"cmdline":   cmdline.Command{},
 				"copyright": License,
 				"iminfo":    iminfo.Command{},
@@ -161,7 +164,7 @@ var Goes = &goes.Goes{
 				"log":       daemons.Log{},
 				"machine":   Machine,
 				"patents":   Patents,
-				"version":   &Version,
+				"version":   version.Command{},
 			},
 		},
 		"/init":     &slashinit.Command{},

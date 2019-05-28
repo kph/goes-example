@@ -1,0 +1,11 @@
+*.orig
+*.patch
+*.rej
+*.so
+*.swp
+*.test
+*.zip
+*~
+*#*#
+/goes-example
+/goes-example-arm
