@@ -46,6 +46,7 @@ import (
 	"github.com/platinasystems/goes/cmd/kexec"
 	"github.com/platinasystems/goes/cmd/keys"
 	"github.com/platinasystems/goes/cmd/kill"
+	"github.com/platinasystems/goes/cmd/ldp"
 	"github.com/platinasystems/goes/cmd/ln"
 	"github.com/platinasystems/goes/cmd/log"
 	"github.com/platinasystems/goes/cmd/ls"
@@ -133,6 +134,7 @@ var Goes = &goes.Goes{
 		"kexec":   &kexec.Command{},
 		"keys":    keys.Command{},
 		"kill":    kill.Command{},
+		"ldp":     ldp.Command{},
 		"ln":      ln.Command{},
 		"log":     log.Command{},
 		"ls":      ls.Command{},
