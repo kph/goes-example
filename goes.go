@@ -76,6 +76,7 @@ import (
 	"github.com/platinasystems/goes/cmd/truecmd"
 	"github.com/platinasystems/goes/cmd/umount"
 	"github.com/platinasystems/goes/cmd/uninstall"
+	"github.com/platinasystems/goes/cmd/uptime"
 	"github.com/platinasystems/goes/cmd/uptimed"
 	"github.com/platinasystems/goes/cmd/version"
 	"github.com/platinasystems/goes/cmd/wget"
@@ -182,6 +183,7 @@ var Goes = &goes.Goes{
 		"true":      truecmd.Command{},
 		"umount":    umount.Command{},
 		"uninstall": &uninstall.Command{},
+		"uptime":    &uptime.Command{},
 		"uptimed":   uptimed.Command(make(chan struct{})),
 		"wget":      wget.Command{},
 	},
