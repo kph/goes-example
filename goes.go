@@ -17,6 +17,7 @@ import (
 	"github.com/platinasystems/goes/cmd/cmdline"
 	"github.com/platinasystems/goes/cmd/cp"
 	"github.com/platinasystems/goes/cmd/daemons"
+	"github.com/platinasystems/goes/cmd/dhcpcd"
 	"github.com/platinasystems/goes/cmd/dmesg"
 	"github.com/platinasystems/goes/cmd/echo"
 	"github.com/platinasystems/goes/cmd/elsecmd"
@@ -46,6 +47,7 @@ import (
 	"github.com/platinasystems/goes/cmd/kexec"
 	"github.com/platinasystems/goes/cmd/keys"
 	"github.com/platinasystems/goes/cmd/kill"
+	"github.com/platinasystems/goes/cmd/ldp"
 	"github.com/platinasystems/goes/cmd/ln"
 	"github.com/platinasystems/goes/cmd/log"
 	"github.com/platinasystems/goes/cmd/ls"
@@ -98,6 +100,7 @@ var Goes = &goes.Goes{
 		"chmod":    chmod.Command{},
 		"cp":       cp.Command{},
 		"daemons":  daemons.Admin,
+		"dhcpcd":   &dhcpcd.Command{},
 		"dmesg":    dmesg.Command{},
 		"echo":     echo.Command{},
 		"else":     &elsecmd.Command{},
@@ -133,6 +136,7 @@ var Goes = &goes.Goes{
 		"kexec":   &kexec.Command{},
 		"keys":    keys.Command{},
 		"kill":    kill.Command{},
+		"ldp":     ldp.Command{},
 		"ln":      ln.Command{},
 		"log":     log.Command{},
 		"ls":      ls.Command{},
