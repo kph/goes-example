@@ -28,6 +28,7 @@ import (
 	"github.com/platinasystems/goes/cmd/femtocom"
 	"github.com/platinasystems/goes/cmd/ficmd"
 	"github.com/platinasystems/goes/cmd/function"
+	"github.com/platinasystems/goes/cmd/grep"
 	"github.com/platinasystems/goes/cmd/grub"
 	"github.com/platinasystems/goes/cmd/hdel"
 	"github.com/platinasystems/goes/cmd/hdelta"
@@ -115,6 +116,7 @@ var Goes = &goes.Goes{
 				[]string{"sshd"},
 			},
 		},
+		"grep":    grep.Command{},
 		"grub":    &grub.Command{},
 		"hdel":    hdel.Command{},
 		"hdelta":  &hdelta.Command{},
@@ -128,7 +130,7 @@ var Goes = &goes.Goes{
 		"insmod":  insmod.Command{},
 		"install": &install.Command{},
 		"ip":      ip.Goes,
-		"kexec":   kexec.Command{},
+		"kexec":   &kexec.Command{},
 		"keys":    keys.Command{},
 		"kill":    kill.Command{},
 		"ln":      ln.Command{},
