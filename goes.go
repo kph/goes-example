@@ -42,7 +42,6 @@ import (
 	"github.com/platinasystems/goes/cmd/ifcmd"
 	"github.com/platinasystems/goes/cmd/iminfo"
 	"github.com/platinasystems/goes/cmd/insmod"
-	"github.com/platinasystems/goes/cmd/install"
 	"github.com/platinasystems/goes/cmd/ip"
 	"github.com/platinasystems/goes/cmd/kexec"
 	"github.com/platinasystems/goes/cmd/keys"
@@ -79,7 +78,6 @@ import (
 	"github.com/platinasystems/goes/cmd/thencmd"
 	"github.com/platinasystems/goes/cmd/truecmd"
 	"github.com/platinasystems/goes/cmd/umount"
-	"github.com/platinasystems/goes/cmd/uninstall"
 	"github.com/platinasystems/goes/cmd/uptime"
 	"github.com/platinasystems/goes/cmd/uptimed"
 	"github.com/platinasystems/goes/cmd/version"
@@ -131,7 +129,6 @@ var Goes = &goes.Goes{
 		"hwait":   hwait.Command{},
 		"if":      &ifcmd.Command{},
 		"insmod":  insmod.Command{},
-		"install": &install.Command{},
 		"ip":      ip.Goes,
 		"kexec":   &kexec.Command{},
 		"keys":    keys.Command{},
@@ -190,9 +187,8 @@ var Goes = &goes.Goes{
 		"then":      &thencmd.Command{},
 		"true":      truecmd.Command{},
 		"umount":    umount.Command{},
-		"uninstall": &uninstall.Command{},
 		"uptime":    &uptime.Command{},
-		"uptimed":   uptimed.Command(make(chan struct{})),
+		"uptimed":   uptimed.Command{},
 		"wget":      wget.Command{},
 	},
 }
