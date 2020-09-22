@@ -42,6 +42,7 @@ import (
 	"github.com/platinasystems/goes/cmd/ifcmd"
 	"github.com/platinasystems/goes/cmd/iminfo"
 	"github.com/platinasystems/goes/cmd/insmod"
+	"github.com/platinasystems/goes/cmd/install"
 	"github.com/platinasystems/goes/cmd/ip"
 	"github.com/platinasystems/goes/cmd/kexec"
 	"github.com/platinasystems/goes/cmd/keys"
@@ -129,6 +130,7 @@ var Goes = &goes.Goes{
 		"hwait":   hwait.Command{},
 		"if":      &ifcmd.Command{},
 		"insmod":  insmod.Command{},
+		"install": &install.Command{},
 		"ip":      ip.Goes,
 		"kexec":   &kexec.Command{},
 		"keys":    keys.Command{},
