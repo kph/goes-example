@@ -49,6 +49,8 @@ github.com/platinasystems/goes v1.13.6 h1:rVbz8I9Mc7zwluMprvtIWca+/6QLIfMoTTIUY0
 github.com/platinasystems/goes v1.13.6/go.mod h1:Ug0JPDk0F1MjsiTOFMxbq8XBnAPC8rfz4mN5xfDAOpk=
 github.com/platinasystems/goes v1.14.0 h1:vJRj7bLKieS2MfN6sjgIxbPg37mLLFb4vwkqXEOFASw=
 github.com/platinasystems/goes v1.14.0/go.mod h1:Ug0JPDk0F1MjsiTOFMxbq8XBnAPC8rfz4mN5xfDAOpk=
+github.com/platinasystems/goes v1.18.2 h1:QxB69YCVk7unpcd6X8/ur80u+k4L1YUjgjqe7J/fGxY=
+github.com/platinasystems/goes v1.18.2/go.mod h1:vybyrT5KMRsipey6KxUOI4SPX4kFLUuzgi8WCmsaiRM=
 github.com/platinasystems/gpio v1.3.0/go.mod h1:UsR1pB6U/S7Ql6RDrF/S6rMJqWOiZu3H2mKQeEe4v7U=
 github.com/platinasystems/i2c v1.2.0/go.mod h1:Yj5hRxt+HXbW1rXv9aTtxUNZsegDjeWerUPY5BIjDVM=
 github.com/platinasystems/ioport v0.0.1/go.mod h1:hfzDUTcaOvxYi0bwMY50WVOenxuO9GQu1k55K9nkXTg=

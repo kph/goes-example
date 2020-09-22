@@ -86,6 +86,8 @@ import (
 	"github.com/platinasystems/goes/lang"
 )
 
+var Version = "(devel)"
+
 var Goes = &goes.Goes{
 	NAME: "goes-" + name,
 	APROPOS: lang.Alt{
@@ -172,7 +174,7 @@ var Goes = &goes.Goes{
 				"log":       daemons.Log{},
 				"machine":   Machine,
 				"patents":   Patents,
-				"version":   version.Command{},
+				"version":   &version.Command{V: Version},
 			},
 		},
 		"/init":     &slashinit.Command{},
