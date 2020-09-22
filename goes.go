@@ -17,6 +17,7 @@ import (
 	"github.com/platinasystems/goes/cmd/cmdline"
 	"github.com/platinasystems/goes/cmd/cp"
 	"github.com/platinasystems/goes/cmd/daemons"
+	"github.com/platinasystems/goes/cmd/dhcpcd"
 	"github.com/platinasystems/goes/cmd/dmesg"
 	"github.com/platinasystems/goes/cmd/echo"
 	"github.com/platinasystems/goes/cmd/elsecmd"
@@ -99,6 +100,7 @@ var Goes = &goes.Goes{
 		"chmod":    chmod.Command{},
 		"cp":       cp.Command{},
 		"daemons":  daemons.Admin,
+		"dhcpcd":   &dhcpcd.Command{},
 		"dmesg":    dmesg.Command{},
 		"echo":     echo.Command{},
 		"else":     &elsecmd.Command{},
